@@ -1,0 +1,385 @@
+* {
+  box-sizing: border-box;
+}
+*::selection {
+  background: #333;
+  color: #fcdd26;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #333;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #fcdd26;
+}
+
+.icone img,
+.bone,
+.paw {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  font-weight: 400;
+}
+a:hover {
+  color: #fcdd26 !important;
+}
+ul {
+  margin: 0 20%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  min-height: 75vh;
+
+  background: url("home-bg.webp") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.home .content {
+  margin: 0 50px;
+  padding: 0;
+}
+.home .content span {
+  color: #333;
+  font-size: 1rem;
+}
+
+.home .content h4 {
+  color: #333;
+  font-size: 3.9rem;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  color: #333;
+  background: #fcdd26;
+  position: relative;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 10% 25%, 0 100%);
+  z-index: -1;
+  background: #444;
+  transition: 0.3s cubic-bezier(0.38, 1.15, 0.7, 1.12);
+}
+
+.btn:hover:before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.btn:hover {
+  color: #fcdd26;
+}
+
+.home .content .btn {
+  background: #fff;
+}
+.category h1,
+.featured h1,
+.products h1,
+.offer h1,
+.contact h1 {
+  text-align: center;
+  margin: 7%;
+}
+.category .row {
+  margin-left: 5px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+}
+.category,
+.featured,
+.products,
+.offer,
+.contact {
+  margin-top: 15%;
+}
+
+.category .box img {
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+.category .box {
+  margin: 0 20px;
+  text-align: center;
+}
+.box_4 {
+  margin-top: 20% !important;
+  text-align: center;
+}
+.category .btn {
+  background-color: #fcdd26;
+  outline: none;
+  border: none;
+  width: 40%;
+  border-radius: 10%;
+}
+.card {
+  display: grid !important;
+  grid-template-columns: auto auto;
+  height: 280px;
+  width: 450px;
+  border: 1px solid transparent !important;
+  text-transform: capitalize;
+  margin-left: 5%;
+}
+.card .btn {
+  margin-top: 0;
+}
+
+.card img {
+  background-position: center;
+  width: 180px;
+  height: 220px;
+
+  background-size: cover;
+}
+.card-groups {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.stars img {
+  width: 20px;
+  height: 20px;
+}
+.card2 {
+  margin-left: 2px;
+  transition: 0.3s;
+}
+
+.featured .price {
+  background-color: #fcdd26;
+  border-radius: 40px;
+  transform: translateX(20px);
+  transform: translateY(-25px);
+  text-align: center;
+  height: 50px;
+  width: 60px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 3rem;
+  float: right;
+}
+/*
+.featured.price {
+  position: absolute;
+  top: 2px;
+  right: 1rem;
+  height: 5.5rem;
+  width: 4rem;
+  text-align: center;
+  line-height: 6rem;
+  border-radius: 50%;
+  background: #fcdd26;
+  color: #333;
+  font-size: 1rem;
+}*/
+.card .content {
+  margin-top: 20px;
+}
+.card .btn {
+  background-color: #fcdd26;
+}
+.deal {
+  min-height: 75vh;
+  background: url("deal-bg.webp") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.deal .content {
+  text-align: center;
+  margin-left: 30%;
+  padding: 0;
+}
+.deal .content span {
+  margin-left: -30%;
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+.deal .content h4 {
+  color: white;
+  font-size: 3.5rem;
+  width: 70%;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.deal .content .btn {
+  color: #333;
+  background-color: #fcdd26;
+  margin-left: -30%;
+}
+.products .price span {
+  text-decoration-line: line-through;
+}
+.products {
+  font-size: 20px;
+}
+
+.offer .box-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer .box-container .box {
+  flex: 1 1 40rem;
+  margin: 2rem;
+  position: relative;
+}
+
+.offer .box-container .box img {
+  width: 100%;
+}
+
+.offer .box-container .box .content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: #333;
+}
+
+.offer .box-container .box .content span {
+  font-size: 1rem;
+}
+
+.offer .box-container .box .content h4 {
+  font-size: 2.5rem;
+}
+
+.offer .box-container .box:first-child .content .btn {
+  background: #fff;
+}
+
+.offer .box-container .box:last-child .content {
+  color: #fff;
+}
+.one {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 5%;
+  margin-left: 20%;
+}
+.two {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 20%;
+}
+.contact img {
+  opacity: 0.1;
+}
+.three {
+  margin-left: 20%;
+}
+textarea {
+  padding: 1rem 2rem;
+
+  width: 49%;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  text-transform: none;
+}
+input {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+textarea::placeholder,
+input::placeholder {
+  text-transform: capitalize;
+}
+input,
+textarea {
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
+.contact {
+  margin-bottom: 10%;
+}
+button {
+  cursor: pointer;
+  width: fit-content;
+  background-color: #fff;
+  border: none;
+  outline: none;
+
+  border-radius: 25%;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 40% !important;
+  margin-top: 10% !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+button:hover {
+  background-color: #333;
+}
+.iconfoo {
+  margin-left: 30%;
+}
+.iconfoo img {
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  background-position: center;
+}
+.iconfoo a {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+
+  background-color: #fcdd26;
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 46px;
+}
+hr {
+  margin: 10%;
+}
+.footer h1 {
+  text-align: center;
+}
+.footer span {
+  color: #fcdd26;
+}
