@@ -43,7 +43,7 @@ ul {
 .home {
   min-height: 75vh;
 
-  background: url("home-bg.webp") no-repeat;
+  background: url("./img/home-bg.webp") no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -212,7 +212,7 @@ ul {
 }
 .deal {
   min-height: 75vh;
-  background: url("deal-bg.webp") no-repeat;
+  background: url("./img/deal-bg.webp") no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
